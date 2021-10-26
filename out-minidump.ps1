@@ -1,3 +1,4 @@
+    Function out-minidump{
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, Mandatory = $True, ValueFromPipeline = $True)]
@@ -58,3 +59,5 @@
     }
 
     END {}
+}
+Get-Process | Out-Minidump -DumpFilePath C:\temp
